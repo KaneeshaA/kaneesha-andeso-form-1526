@@ -1,0 +1,106 @@
+.wrapper {
+    max-width: 50rem;
+    margin: auto;
+}
+
+body {
+    font-family: Arial, Helvetica, Helvetica Neue, sans-serif;
+    font-size: 1rem;
+}
+
+fieldset {
+    background-color: #F5F5F5;
+    border: solid 0.1em #DDD;
+    border-radius: 0.2em;
+    padding: 2em;
+}
+
+legend {
+    background-color: white;
+    font-size: 2rem;
+    border: solid 0.05em #DDD;
+    padding: 0.6em;
+    white-space: nowrap;
+
+}
+
+.two {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 1em;
+
+}
+
+label {
+    white-space: nowrap;
+    display: block;
+    margin-bottom: 1em;
+}
+
+input[type=text] {
+    width: 100%;
+    border: solid 0.05em #DDD;
+    border-radius: 0.2em;
+    margin-bottom: 0.5em;
+    min-height: 2.2em;
+
+}
+
+textarea {
+    width: 100%;
+    border: solid 0.05em #DDD;
+    border-radius: 0.2em;
+    height: 4em;
+
+}
+
+#submit {
+    background-color: #6495ED;
+    color: white;
+    border: none;
+    border-radius: 0.2em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    width: 100%;
+}
+
+/* Styling for Tablet */
+@media only screen and (min-width: 25rem) and (max-width: 40rem) {
+    .two {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .two div {
+        flex: 1;
+    }
+
+    #submit {
+        width: auto;
+    }
+
+}
+
+/* Styling for Desktop */
+@media only screen and (min-width: 40rem) {
+    .two {
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+    }
+
+    .two div {
+        flex: 1;
+    }
+
+    #submit {
+        width: auto;
+    }
+
+}
